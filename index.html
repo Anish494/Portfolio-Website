@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anish Kumar Singh</title>
+<meta name="description" content="Anish Kumar Singh — Computer Engineering student working on ML, Deep Learning, and Computer Vision.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <!-- ============ HEADER ============ -->
+  <header>
+    <div class="logo" onclick="window.location.hash='top'">Anish Kumar Singh<span></span></div>
+    <nav id="navLinks">
+      <a href="#about" class="nav-item"><span class="initial">A</span>bout</a>
+      <a href="#skills" class="nav-item"><span class="initial">S</span>kills</a>
+      <a href="#work" class="nav-item"><span class="initial">P</span>rojects</a>
+      
+      <a href="#contact" class="nav-item nav-item--cta"><span class="initial">C</span>ontact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ============ HOME / HERO ============ -->
+  <div id="top" class="page-section">
+    <div class="home-grid">
+      <div class="left-side">
+        <div class="greeting">Hello, I'm</div>
+        <h1 class="main-name">Anish Kumar<br>Singh</h1>
+        <div class="description">
+          Learning <span>ML</span>, <span>DL</span>, and <span>Computer Vision</span> — not just to code,
+          but to build things that create <span>lasting impact</span> for society.
+        </div>
+        <div class="button-group">
+          <button class="chat-button" onclick="window.location.hash='contact'">Get In Touch!</button>
+          <button class="chat-button-2" onclick="window.location.hash='work'">See my work →</button>
+        </div>
+        <div class="hero-meta">
+          <span><i class="fas fa-location-dot"></i> Kathmandu, Nepal</span>
+          <span><i class="fas fa-graduation-cap"></i> IOE Thapathali Campus</span>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="photo-ring">
+          <div class="photo-frame">
+            <!-- Replace with your photo: <img src="assets/anish.jpg" alt="Anish Kumar Singh"> -->
+<img src="p.jpeg" alt="Anish Kumar Singh">          </div>
+        </div>
+        <div class="photo-badge"><i class="fas fa-bolt"></i> open to AI/ML/CV internships</div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span>scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+
+
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    
+    <div class="about__grid">
+      <div class="about__text">
+        <h2 class="section__title">A little about me</h2>
+        <p>I'm a Computer Engineering student at Thapathali Campus, IOE, Tribhuvan University. I spend most of my time learning Machine Learning, Deep Learning, and Computer Vision — not just to write code, but to solve real problems that matter.</p>
+        <p>Outside of models and notebooks, I lead teams, coordinate events, and try to build tech that's actually useful to the people around me.</p>
+        <p class="about__quote">"Code. Learn. Build. Repeat."</p>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--muted" id="skills">
+    <h2 class="section__title">What I actually know</h2>
+
+    <div class="skills__grid">
+      <div class="skill-card">
+        <span class="skill-card__label">Languages</span>
+        <ul class="skill-card__list">
+          <li>Python</li>
+          <li>C / C++</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="skill-card__label">AI / ML / DL</span>
+        <ul class="skill-card__list">
+          <li>PyTorch, Transformers</li>
+          <li>YOLOv8, MobileNetV3</li>
+          <li>Mediapipe, OpenCV</li>
+          <li>Scikit-learn, Optuna</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="skill-card__label">Web</span>
+        <ul class="skill-card__list">
+          <li>React</li>
+          <li>Django, Django REST</li>
+          <li>Flask, FastAPI, Pydantic</li>
+          <li>Django Channels, Postman</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="skill-card__label">Database</span>
+        <ul class="skill-card__list">
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="skill-card__label">Tools &amp; Other</span>
+        <ul class="skill-card__list">
+          <li>Docker, Git, GitHub</li>
+          <li>Arduino, ESP8266</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section" id="work">
+    <h2 class="section__title">Selected projects</h2>
+
+    <div class="work__grid">
+
+      <article class="work-card">
+        <div class="work-card__img" style="--tint:1"><span>Fruit Freshness Detection</span></div>
+        <div class="work-card__body">
+          <h3>Fruit Freshness Detection</h3>
+          <p>YOLOv8 for localization + MobileNetV3 for freshness classification, wired into a full-stack app with real-time detection over WebSockets.</p>
+          <div class="work-card__tags"><span>Python</span><span>YOLOv8</span><span>MobileNetV3</span><span>Django</span><span>React</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__img" style="--tint:2"><span>English → Nepali Translator</span></div>
+        <div class="work-card__body">
+          <h3>English to Nepali Translator</h3>
+          <p>An English to Nepali language translator built on a Transformer written from scratch in PyTorch.</p>
+          <div class="work-card__tags"><span>Python</span><span>PyTorch</span><span>Transformers</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__img" style="--tint:3"><span>Badminton Shot Classifier</span></div>
+        <div class="work-card__body">
+          <h3>Badminton Shot Classifier</h3>
+          <p>Real-time shot classification (forehand, backhand, smash, serve) using YOLOv8 pose estimation and trigonometry on joint angles.</p>
+          <div class="work-card__tags"><span>YOLOv8</span><span>Mediapipe</span><span>OpenCV</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__img" style="--tint:4"><span>Baghchal: AI &amp; Multiplayer</span></div>
+        <div class="work-card__body">
+          <h3>Baghchal Game: AI &amp; Multiplayer</h3>
+          <p>Full-stack Bagh-Chal (Tiger and Goats) with a Minimax AI opponent, plus local and online 2-player modes with live chat.</p>
+          <div class="work-card__tags"><span>React</span><span>Django REST</span><span>PostgreSQL</span><span>Channels</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__img" style="--tint:5"><span>Punarnirman — Civic Tech</span></div>
+        <div class="work-card__body">
+          <h3>Punarnirman — Civic Tech</h3>
+          <p>RHackathon 2025 volunteer management platform — matches volunteers to organizations with a Random Forest model on skills and availability.</p>
+          <div class="work-card__tags"><span>React</span><span>Django REST</span><span>Scikit-learn</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__img" style="--tint:6"><span>Rotaract Kathmandu Website</span></div>
+        <div class="work-card__body">
+          <h3>Rotaract Club of Kathmandu Website</h3>
+          <p>Club website with a knowledge-based chatbot powered by PostgreSQL SearchVector for fast query responses.</p>
+          <div class="work-card__tags"><span>React</span><span>Django REST</span><span>PostgreSQL</span></div>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__img" style="--tint:1"><span>Web-Controlled RC Car</span></div>
+        <div class="work-card__body">
+          <h3>Web-Controlled RC Car</h3>
+          <p>An RC car controlled entirely over WiFi — an ESP8266 in AP mode hosts an HTTP server, driving motors via URL query parameters.</p>
+          <div class="work-card__tags"><span>C++</span><span>ESP8266</span><span>Arduino</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ============ BOTTOM CTA ============ -->
+  <div class="bottom-cta" id="contact">
+    <h3>Let's Build Something Together</h3>
+    <p>Open to AI/ML/CV internship opportunities in Kathmandu. Got a project, a question, or just want to collaborate? Reach out.</p>
+    <button class="cta-button" onclick="window.location.href='mailto:anishks494@gmail.com'">Say Hello </button>
+  </div>
+
+  <!-- ============ FOLLOW / FOOTER ============ -->
+  <div class="follow-section">
+    <div class="follow-text">find me</div>
+    <div class="social-icons">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anishks494@gmail.com"
+   target="_blank"
+   class="footer-link">
+    <i class="fas fa-envelope"></i>
+</a>
+      <a href="https://github.com/Anish494" target="_blank" rel="noopener" class="footer-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/anish-kumar-singh-1517b0275/" target="_blank" rel="noopener" class="footer-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#top" class="footer-link" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <p class="footer-fine">Anish Kumar Singh · <span id="year"></span></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
