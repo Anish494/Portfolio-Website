@@ -103,6 +103,27 @@ header{
   color: var(--ink-soft);
   text-transform: lowercase;
 }
+.nav-item{
+  position: relative;
+}
+.nav-item::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s ease;
+}
+.nav-item.active-nav::after{
+  transform: scaleX(1);
+}
+.nav-item.active-nav{
+  color: var(--ink);
+}
 .nav-item .initial{ color: var(--accent); font-weight: 600; text-transform: uppercase; }
 .nav-item:hover{ color: var(--ink); }
 .nav-item--cta{
@@ -242,7 +263,12 @@ header{
   color: var(--surface);
   opacity: 0.92;
 }
-
+.timeline__meta{
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin: 0.15rem 0 0.6rem;
+}
 .photo-badge{
   font-family: var(--font-mono);
   font-size: 0.78rem;

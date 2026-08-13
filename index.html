@@ -23,7 +23,7 @@
       <a href="#about" class="nav-item"><span class="initial">A</span>bout</a>
       <a href="#skills" class="nav-item"><span class="initial">S</span>kills</a>
       <a href="#work" class="nav-item"><span class="initial">P</span>rojects</a>
-      
+      <a href="#experience" class="nav-item"><span class="initial">E</span>xperience</a>
       <a href="#contact" class="nav-item nav-item--cta"><span class="initial">C</span>ontact</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -38,7 +38,7 @@
         <div class="greeting">Hello, I'm</div>
         <h1 class="main-name">Anish Kumar<br>Singh</h1>
         <div class="description">
-          Learning <span>ML</span>, <span>DL</span>, and <span>Computer Vision</span> — not just to code,
+          Computer Engineering student building in <span>Machine Learning</span>, <span>Deep Learning</span>, and <span>Computer Vision</span> — not just to code,
           but to build things that create <span>lasting impact</span> for society.
         </div>
         <div class="button-group">
@@ -54,8 +54,8 @@
       <div class="right-side">
         <div class="photo-ring">
           <div class="photo-frame">
-            <!-- Replace with your photo: <img src="assets/anish.jpg" alt="Anish Kumar Singh"> -->
-<img src="p.jpeg" alt="Anish Kumar Singh">          </div>
+            <img src="p.jpeg" alt="Anish Kumar Singh">
+          </div>
         </div>
         <div class="photo-badge"><i class="fas fa-bolt"></i> open to AI/ML/CV internships</div>
       </div>
@@ -67,19 +67,15 @@
     </div>
   </div>
 
-
-
   <!-- ============ ABOUT ============ -->
   <section class="section" id="about">
-    
     <div class="about__grid">
       <div class="about__text">
         <h2 class="section__title">A little about me</h2>
-        <p>I'm a Computer Engineering student at Thapathali Campus, IOE, Tribhuvan University. I spend most of my time learning Machine Learning, Deep Learning, and Computer Vision — not just to write code, but to solve real problems that matter.</p>
-        <p>Outside of models and notebooks, I lead teams, coordinate events, and try to build tech that's actually useful to the people around me.</p>
+        <p>I'm a Computer Engineering student at Thapathali Campus, IOE, Tribhuvan University, focused on Machine Learning, Deep Learning, and Computer Vision — not just to write code, but to solve real problems that matter, especially in a Nepali context.</p>
+        <p>I like building things from first principles — training models from scratch, understanding what's happening under the hood — rather than just wiring up pretrained APIs. Outside of models and notebooks, I lead teams, coordinate events, and try to build tech that's actually useful to the people around me.</p>
         <p class="about__quote">"Code. Learn. Build. Repeat."</p>
       </div>
-  
     </div>
   </section>
 
@@ -89,20 +85,20 @@
 
     <div class="skills__grid">
       <div class="skill-card">
-        <span class="skill-card__label">Languages</span>
-        <ul class="skill-card__list">
-          <li>Python</li>
-          <li>C / C++</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-      <div class="skill-card">
         <span class="skill-card__label">AI / ML / DL</span>
         <ul class="skill-card__list">
           <li>PyTorch, Transformers</li>
           <li>YOLOv8, MobileNetV3</li>
           <li>Mediapipe, OpenCV</li>
-          <li>Scikit-learn, Optuna</li>
+          <li>Scikit-learn, XGBoost, Optuna</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <span class="skill-card__label">Languages</span>
+        <ul class="skill-card__list">
+          <li>Python</li>
+          <li>C / C++</li>
+          <li>JavaScript</li>
         </ul>
       </div>
       <div class="skill-card">
@@ -131,9 +127,9 @@
     </div>
   </section>
 
-  <!-- ============ WORK ============ -->
+  <!-- ============ WORK — FEATURED AI/ML ============ -->
   <section class="section" id="work">
-    <h2 class="section__title">Selected projects</h2>
+    <h2 class="section__title">Featured AI / ML work</h2>
 
     <div class="work__grid">
 
@@ -141,17 +137,24 @@
         <div class="work-card__img" style="--tint:1"><span>Fruit Freshness Detection</span></div>
         <div class="work-card__body">
           <h3>Fruit Freshness Detection</h3>
-          <p>YOLOv8 for localization + MobileNetV3 for freshness classification, wired into a full-stack app with real-time detection over WebSockets.</p>
+          <p>Two-stage computer vision pipeline — YOLOv8 for produce localization, MobileNetV3 for freshness classification — wired into a full-stack app with real-time detection over WebSockets.</p>
+          <div class="work-card__metrics">
+            <span>92.3% mAP@50</span>
+            <span>90.8% precision</span>
+            <span>92% classification acc.</span>
+          </div>
           <div class="work-card__tags"><span>Python</span><span>YOLOv8</span><span>MobileNetV3</span><span>Django</span><span>React</span></div>
+          <a class="work-card__link" href="https://github.com/aadityaKS1/Freshness-Detection-Computer_Vision-" target="_blank" rel="noopener">View on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
       </article>
 
       <article class="work-card">
-        <div class="work-card__img" style="--tint:2"><span>English → Nepali Translator</span></div>
+        <div class="work-card__img" style="--tint:2"><span>English → Nepali Transformer</span></div>
         <div class="work-card__body">
-          <h3>English to Nepali Translator</h3>
-          <p>An English to Nepali language translator built on a Transformer written from scratch in PyTorch.</p>
+          <h3>English to Nepali Transformer Translator</h3>
+          <p>Transformer encoder-decoder architecture built entirely from scratch in PyTorch — no <code>nn.Transformer</code> module — implementing multi-head attention, positional encoding, and masking, to translate English into Nepali.</p>
           <div class="work-card__tags"><span>Python</span><span>PyTorch</span><span>Transformers</span></div>
+          <a class="work-card__link" href="https://github.com/Anish494/English_to_nepali_translator_using_transformer" target="_blank" rel="noopener">View on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
       </article>
 
@@ -159,50 +162,112 @@
         <div class="work-card__img" style="--tint:3"><span>Badminton Shot Classifier</span></div>
         <div class="work-card__body">
           <h3>Badminton Shot Classifier</h3>
-          <p>Real-time shot classification (forehand, backhand, smash, serve) using YOLOv8 pose estimation and trigonometry on joint angles.</p>
+          <p>Real-time shot classification (forehand, backhand, smash, serve) from video using YOLOv8 pose estimation to extract keypoints, then joint-angle trigonometry to classify strokes.</p>
           <div class="work-card__tags"><span>YOLOv8</span><span>Mediapipe</span><span>OpenCV</span></div>
+          <a class="work-card__link" href="https://github.com/Anish494/Badminton_game_pose_estimation_and_counting" target="_blank" rel="noopener">View on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
       </article>
 
       <article class="work-card">
-        <div class="work-card__img" style="--tint:4"><span>Baghchal: AI &amp; Multiplayer</span></div>
+        <div class="work-card__img" style="--tint:4"><span>Question Similarity Detection</span></div>
         <div class="work-card__body">
-          <h3>Baghchal Game: AI &amp; Multiplayer</h3>
-          <p>Full-stack Bagh-Chal (Tiger and Goats) with a Minimax AI opponent, plus local and online 2-player modes with live chat.</p>
-          <div class="work-card__tags"><span>React</span><span>Django REST</span><span>PostgreSQL</span><span>Channels</span></div>
+          <h3>Question Similarity Detection</h3>
+          <p>Duplicate-question classifier using Bag-of-Words features with engineered signals (token overlap, length difference, common-word counts); compared Random Forest and XGBoost classifiers and analyzed error patterns via confusion matrices.</p>
+          <div class="work-card__metrics">
+            <span>78.9% (Random Forest)</span>
+            <span>79.45% (XGBoost)</span>
+          </div>
+          <div class="work-card__tags"><span>Scikit-learn</span><span>XGBoost</span><span>NLP</span></div>
+          <a class="work-card__link" href="https://github.com/Anish494/NLP_Learning" target="_blank" rel="noopener">View on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
       </article>
 
       <article class="work-card">
-        <div class="work-card__img" style="--tint:5"><span>Punarnirman — Civic Tech</span></div>
+        <div class="work-card__img" style="--tint:5"><span>Punarnirman - Civic Tech</span></div>
         <div class="work-card__body">
-          <h3>Punarnirman — Civic Tech</h3>
-          <p>RHackathon 2025 volunteer management platform — matches volunteers to organizations with a Random Forest model on skills and availability.</p>
+          <h3>Punarnirman — Civic Tech (RHackathon 2025)</h3>
+          <p>Volunteer management platform with role-based dashboards, built in a week-long hackathon. Implemented AI-driven volunteer-to-task matching using a Random Forest model trained on skills, availability, and other criteria.</p>
           <div class="work-card__tags"><span>React</span><span>Django REST</span><span>Scikit-learn</span></div>
-        </div>
-      </article>
-
-      <article class="work-card">
-        <div class="work-card__img" style="--tint:6"><span>Rotaract Kathmandu Website</span></div>
-        <div class="work-card__body">
-          <h3>Rotaract Club of Kathmandu Website</h3>
-          <p>Club website with a knowledge-based chatbot powered by PostgreSQL SearchVector for fast query responses.</p>
-          <div class="work-card__tags"><span>React</span><span>Django REST</span><span>PostgreSQL</span></div>
-        </div>
-      </article>
-
-      <article class="work-card">
-        <div class="work-card__img" style="--tint:1"><span>Web-Controlled RC Car</span></div>
-        <div class="work-card__body">
-          <h3>Web-Controlled RC Car</h3>
-          <p>An RC car controlled entirely over WiFi — an ESP8266 in AP mode hosts an HTTP server, driving motors via URL query parameters.</p>
-          <div class="work-card__tags"><span>C++</span><span>ESP8266</span><span>Arduino</span></div>
+          <a class="work-card__link" href="https://github.com/Rotaract-Hackathon/r-hackathon-final-submission-tech-ninjas" target="_blank" rel="noopener">View on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
       </article>
 
     </div>
   </section>
 
+  <!-- ============ OTHER PROJECTS ============ -->
+  <section class="section section--muted" id="other-work">
+    <h2 class="section__title">Other projects</h2>
+    <p class="section__subtitle">Full-stack and embedded work outside the AI/ML focus above.</p>
+
+    <div class="other-work__grid">
+
+      <article class="other-work-card">
+        <h4>Baghchal Game: AI &amp; Multiplayer</h4>
+        <p>Full-stack Bagh-Chal (Tiger and Goats) with a Minimax AI opponent, plus local and online 2-player modes with live chat via Django Channels.</p>
+        <div class="work-card__tags"><span>React</span><span>Django REST</span><span>PostgreSQL</span><span>Channels</span></div>
+        <a class="work-card__link" href="https://github.com/Anish494/DBMS_Project_Baghchal" target="_blank" rel="noopener">View on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
+      </article>
+
+      <article class="other-work-card">
+        <h4>Rotaract Club of Kathmandu Website</h4>
+        <p>Club website with a knowledge-based chatbot powered by PostgreSQL SearchVector for fast query responses.</p>
+        <div class="work-card__tags"><span>React</span><span>Django REST</span><span>PostgreSQL</span></div>
+                <a class="work-card__link" href="https://github.com/aadityaKS1/rackathmandu" target="_blank" rel="noopener">View on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
+
+      </article>
+
+      <article class="other-work-card">
+        <h4>Web-Controlled RC Car</h4>
+        <p>RC car controlled entirely over WiFi — an ESP8266 in AP mode hosts an HTTP server, driving motors via URL query parameters.</p>
+        <div class="work-card__tags"><span>C++</span><span>ESP8266</span><span>Arduino</span></div>
+                <a class="work-card__link" href="https://github.com/Anish494/Web-Controlled-RC-Car" target="_blank" rel="noopener">View on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
+
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <h2 class="section__title">Experience &amp; involvement</h2>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__body">
+          <h4>Technical Head — NTBS, Thapathali Campus</h4>
+                  <div class="timeline__meta">2025 July – 2026 June</div>
+
+          <p>Managed the organization's website and social media presence, and coordinated technical logistics for events.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__body">
+          <h4>Chair, International Relations Avenue — Rotaract Club of Kathmandu</h4>
+                  <div class="timeline__meta">2026/27</div>
+
+          <p>Leading international partnerships and cross-club initiatives, coordinating joint projects and communication with partner clubs abroad.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__body">
+          <h4>Intern — Nobel Learning PBC</h4>
+                  <div class="timeline__meta">Aug – Nov 2025</div>
+
+          <p>Learned WordPress, design thinking, and internet troubleshooting; later facilitated sessions on these topics while collaborating with a global team.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__body">
+          <h4>Digital Trainer - Byte the Gap</h4>
+                  <div class="timeline__meta">May 2026</div>
+
+          <p>Trained students from Grade 3 to 10 on Canva, Microsoft Excel, HTML, and professional email writing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ============ BOTTOM CTA ============ -->
   <div class="bottom-cta" id="contact">
